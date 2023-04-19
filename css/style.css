@@ -2,11 +2,31 @@
 @import url("reset.css");
 
 /* ---------- */
-body {}
+body {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 300;
+	color: #9C9C9C;
+}
 
 /* ---------- */
-.wrapper {}
+.wrapper {
+	min-height: 100%;
+	overflow: clip;
+
+	display: flex;
+	flex-direction: column;
+}
 
 /* ---------- */
+.page {
+	flex: 1 1 auto;
+}
+
+/* ---------- */
+[class*="__container"] {
+	max-width: 1310px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
 
 /* ---------- */
