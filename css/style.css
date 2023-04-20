@@ -1,11 +1,18 @@
-/* ----- RESET STYLES ----- */
+/* ----- reset styles ----- */
 @import url("reset.css");
+/* ----- common styles ----- */
+@import url("common.css");
+/* ----- header styles ----- */
+@import url("header.css");
+/* ----- footer styles ----- */
+@import url("footer.css");
 
 /* ---------- */
 body {
 	font-family: 'Poppins', sans-serif;
 	font-weight: 300;
 	color: #9C9C9C;
+	background-color: #0D0D11;
 }
 
 /* ---------- */
