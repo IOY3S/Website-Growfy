@@ -7,7 +7,7 @@
 /* ----- footer styles ----- */
 @import url("footer.css");
 
-/* ---------- */
+/* ----- body ----- */
 body {
 	font-family: 'Poppins', sans-serif;
 	font-weight: 300;
@@ -15,7 +15,7 @@ body {
 	background-color: #0D0D11;
 }
 
-/* ---------- */
+/* ----- wrapper ----- */
 .wrapper {
 	min-height: 100%;
 	overflow: clip;
@@ -24,21 +24,23 @@ body {
 	flex-direction: column;
 }
 
-/* ---------- */
+/* ----- page ----- */
 .page {
 	flex: 1 1 auto;
 }
 
 .page__main {}
 
-/* ---------- */
+.page__clients {}
+
+/* ----- container ----- */
 [class*="__container"] {
 	max-width: 1310px;
 	padding: 0 15px;
 	margin: 0 auto;
 }
 
-/* ----- main ----- */
+/* ----- section-one (main) ----- */
 .main {
 	padding-top: 160px;
 	padding-bottom: 100px;
@@ -141,6 +143,35 @@ body {
 	.header-main__actions {
 		flex-direction: column;
 	}
+}
+
+/* ----- section-two (clients) ----- */
+.clients {
+	padding-top: 100px;
+	padding-bottom: 70px;
+}
+
+.clients__container {}
+
+.clients__title {
+	margin-bottom: 44px;
+	font-size: 14px;
+	line-height: 1.6;
+	text-align: center;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+}
+
+.clients__items {
+	display: flex;
+	gap: 15px;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.clients__item img {
+	max-width: 100%;
 }
 
 /* ---------- */
