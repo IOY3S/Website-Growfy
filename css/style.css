@@ -35,6 +35,8 @@ body {
 
 .page__services {}
 
+.page__why {}
+
 /* ----- container ----- */
 [class*="__container"] {
 	max-width: 1310px;
@@ -64,7 +66,7 @@ body {
 
 .main__header::before {
 	content: "";
-	background: url('../img/main/decor.svg') 0 0 / 100% no-repeat;
+	background: url('../img/decor.svg') 0 0 / 100% no-repeat;
 	width: 122px;
 	height: 122px;
 	position: absolute;
@@ -293,5 +295,79 @@ body {
 
 	.services__column:first-child {
 		padding-top: 0px;
+	}
+}
+
+/* ----- section-five (why) ----- */
+.why {
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+.why__container {
+	display: flex;
+	column-gap: 64px;
+	row-gap: 32px;
+}
+
+.why__images {
+	flex: 0 1 50%;
+}
+
+.images-why {
+	display: flex;
+	position: relative;
+	align-self: flex-end;
+}
+
+.images-why__item {
+	overflow: hidden;
+}
+
+.images-why__item img {
+	max-width: 100%;
+}
+
+.images-why__item_1 {
+	border-radius: 90% 0 49% 49% / 50% 0 31% 31%;
+}
+
+.images-why__item_2 {
+	align-self: flex-end;
+	border-radius: 50% 50% 50% 0;
+}
+
+.why__content {
+	flex: 0 1 50%;
+	align-self: center;
+}
+
+.why__header {}
+
+.images-why::before {
+	content: "";
+	background: url('../img/decor.svg') 0 0 / 100% no-repeat;
+	width: 122px;
+	height: 122px;
+	position: absolute;
+	bottom: -10px;
+	left: -34px;
+}
+
+@media (max-width: 991.98px) {
+	.why {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+}
+
+@media (max-width: 767.98px) {
+	.why {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+
+	.why__container {
+		flex-direction: column-reverse;
 	}
 }
